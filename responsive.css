@@ -1,0 +1,51 @@
+@media screen and (max-width:1000px) {
+
+    .home-para1,
+    .home-para2 {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1000px) {
+    .row1 a,
+    .row3 a {
+        font-size: 1.49rem;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .row1 a {
+        font-size: 1.7rem;
+    }
+
+    .row3 a {
+        font-size: 1.89rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Navbar responsive styling for mobile screen */
+
+    /* .container {
+        width: 95%;
+    } */
+
+    /* .home {
+        padding-top: 0
+    } */
+
+    .home-para1,
+    .home-para2 {
+        font-size: 1.7rem;
+        width: 90%;
+        letter-spacing: 0;
+    }
+
+    .home-mainHeading {
+        font-size: 3.7rem;
+    }
+
+    .home>h2 {
+        font-size: 2.89rem;
+    }
+}

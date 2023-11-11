@@ -1,0 +1,194 @@
+.nav-right .row3 li,
+.nav-right .row1 li {
+    list-style: none;
+}
+
+.navbar-wrapper {
+    position: relative;
+    position: sticky;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(55px);
+    box-shadow: 4px 4px 8px gray;
+    border-top: 3.4px solid black;
+    z-index: 99;
+    background: #fff;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    width: fit-content;
+    height: auto;
+}
+
+.nav-left img {
+    width: 16rem;
+    height: auto;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav-right .row1 ul,
+.nav-right .row3 ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 50%;
+    gap: 0rem;
+}
+
+.row1 li,
+.row3 li {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.row1 a,
+.row3 a {
+    color: gray;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.row1 li:hover,
+.row3 li:hover {
+    background: lightgray;
+}
+
+.row1 li:hover>a,
+.row3 li:hover>a {
+    color: #333;
+}
+
+/* Implement this using javascript */
+.row1 li>a .active,
+.row3 li>a .active {
+    background-color: transparent;
+    font-weight: 700;
+    border-bottom: 3px solid #DC4236;
+}
+
+.row3 a {
+    color: #333;
+}
+
+.row2 {
+    width: 100%;
+    height: 1.4px;
+    background: lightgray;
+}
+
+.row1 .nav-row1-last-li a {
+    border-left: 1.4px solid gray;
+}
+
+.globe-icon {
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+/* Navbar Responsive Part Starts here */
+
+@media screen and (min-width: 768px) and (max-width:1000px) {
+    .nav-left {
+        width: 20%;
+    }
+
+    .nav-right {
+        width: 75%;
+    }
+
+    .row1 a,
+    .row3 a {
+        font-size: 1.49rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1001px) {
+    .row1 a {
+        font-size: 1.7rem;
+    }
+
+    .row3 a {
+        font-size: 1.89rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    /* Navbar responsive styling for mobile screen */
+
+    .nav-right {
+        display: none;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .sidebar>img {
+        width: 12rem;
+        background: none;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .navbar {
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .nav-left img {
+        width: 12rem;
+    }
+
+    .sidebar>img {
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar>img {
+        width: 7rem;
+    }
+}

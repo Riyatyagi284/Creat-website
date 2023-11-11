@@ -1,0 +1,143 @@
+.Innovation-section2-Wrapper {
+    width: 100%;
+    height: 45rem;
+    display: flex;
+}
+
+.innovation-section2-left {
+    width: 50%;
+    height: 100%;
+    background-color: #3A4346;
+}
+
+.innovation-section2-right {
+    width: 50%;
+    height: 100%;
+    background: red;
+}
+
+
+.innovation-section2-right {
+    opacity: 0.68;
+}
+
+.inno-sec2-LeftinnerContainer {
+    margin-top: 6rem;
+    /* width: 95%; */
+    height: 100%;
+    float: left;
+}
+
+.inno-sec2-LeftinnerContainer>img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.inno-sec2-RightinnerContainer {
+    width: 62%;
+    margin: 6rem 0rem 0 8rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #fff;
+}
+
+.inno-sec2-RightinnerContainer>h3 {
+    font-size: 3.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.inno-sec2-RightinnerContainer>p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.inno-sec2-RightinnerContainer>p:nth-child(4) {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid gray;
+}
+
+.circle {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid gray;
+}
+
+.inno-btn {
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background: none;
+    margin-top: 1rem;
+}
+
+.inno-btn:hover {
+    margin-top: 0;
+    padding: 1rem 2rem;
+    width: 14rem;
+    box-shadow: 2px 2px 8px gray;
+    border-radius: 1.4rem;
+    background: red;
+}
+
+/* Responsive Styling */
+
+@media screen and (min-width:992px) {
+    .inno-sec2-LeftinnerContainer {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .Innovation-section2-Wrapper {
+        height: fit-content;
+        display: block;
+    }
+    .innovation-section2-left {
+        width: 100%;
+    }
+    .innovation-section2-right {
+        width: 100%;
+    }
+    .inno-sec2-LeftinnerContainer {
+        margin-top: 0;
+        width: 100%;
+        float: none;
+    }
+    .inno-sec2-RightinnerContainer {
+        width: 80%;
+        margin: 0rem 0rem 0 8rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .inno-sec2-RightinnerContainer {
+        width: 100%;
+        margin: 0;
+        padding: 3.2rem;
+    }
+    .innovation-section1>p {
+        text-align: left;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .circle {
+        display: none;
+    }
+}

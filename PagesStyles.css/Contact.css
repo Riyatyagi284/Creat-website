@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 85%;
+    /* height: 10.66rem; */
+    margin: 0 auto;
+}
+
+/* section1 */
+
+.contactsection1-wrapper {
+    width: 100%;
+    height: 60vh;
+    background-image: url("../PagesImages/contactImg/map.jpg");
+    /* background-size: cover; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.contact-section1 {
+    width: 100%;
+    height: 100%;
+    background-image: url("../PagesImages/mediaImg/dot-grid-pattern.png");
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-section1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(58, 67, 70, 0.3);
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.contact-section-innerWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background: rgba(39, 35, 51, 0.5);
+    color: #fff;
+    padding-top: 7rem;
+    position: relative;
+    z-index: 3;
+}
+
+.contact-section-innerWrapper h2 {
+    margin: 0 auto 2.2rem;
+    padding: 1rem 2rem;
+    font-size: 4.77rem;
+    font-weight: 900;
+    text-align: center;
+    background-color: rgb(231 49 35 / 75%);
+}
+
+.contact-section-innerWrapper p {
+    width: 59%;
+    margin-top: 1rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* section2 */
+
+.contactsection2-wrapper {
+    margin-top: 0rem;
+    width: 100%;
+    background-image: url("../PagesImages/contactImg/creat-pattern-digonal.jpg");
+}
+
+.contactsection2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 0;
+}
+
+.contactsection2-top {
+    display: flex;
+    gap: 7rem;
+}
+
+.contactsection2>.contactsection2-top {
+    width: 100%;
+    height: fit-content;
+    background: #fff;
+    padding: 3.88rem 4.44rem;
+}
+
+.contactsection2-top-left,
+.contactsection2-top-right {
+    width: 48%;
+    height: 100%;
+}
+
+.contact-top-leftWrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-top-leftWrapper>h3 {
+    font-size: 2.79rem;
+    font-weight: 600;
+    color: rgb(2 7 12 / 80%);
+    margin-bottom: 0.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.contact-top-leftWrapper>h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 162px;
+    width: 27%;
+    height: 2px;
+    background: rgb(2 7 12 / 80%);
+}
+
+.contact-top-leftWrapper>h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 159px;
+    width: 10%;
+    height: 2px;
+    background: red;
+}
+
+.contact-top-leftWrapper>input,
+.contact-top-leftWrapper>textarea {
+    width: 100%;
+    padding: 1.4rem 2.2rem;
+    border: 1.2px solid lightgray;
+    border-radius: 4px;
+    outline: none;
+    color: gray;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.contact-top-leftWrapper>.contact-btnWrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 11rem;
+}
+
+.contact-btnWrapper>.redButton {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    background: red;
+    padding: 1.3rem 2rem;
+    width: 24rem;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+.contact-btnWrapper>.redButton:hover {
+    color: black;
+}
+
+.contact-btnWrapper>a {
+    color: black;
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.contact-top-rightWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-top-rightWrapper>img {
+    width: 16rem;
+    margin-bottom: 4.7rem;
+}
+
+.contact-top-rightWrapper>span {
+    background-image: url("../PagesImages/contactImg/creat-pattern-digonal.jpg");
+    background-repeat: repeat;
+    width: 100%;
+    height: 16rem;
+    border-left: 4px solid red;
+    font-size: 2rem;
+    padding: 2rem 18rem 2rem 4rem;
+    margin-bottom: 4rem;
+}
+
+.contact-para {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 8rem;
+    padding-bottom: 2.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.contact-para::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -6rem;
+    width: 100%;
+    height: 1px;
+    background: #817878;
+}
+
+.contact-emailWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.contact-emailWrapper>a {
+    font-size: 2rem;
+    color: red;
+    transition: all 0.5s ease-in;
+}
+
+.contact-emailWrapper>a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.contactsection2>.contactsection2-bottom {
+    width: 100%;
+    height: 50%;
+}
+
+.contactsection2-bottom>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsive Styling */
+
+@media screen and (max-width:1928px) {
+    .contactsection1-wrapper {
+        height: 40rem;
+        background-position: unset;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .contact-top-rightWrapper>span {
+        font-size: 1.95rem;
+        width: 94%;
+        padding: 2rem 2rem 4rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:999px) {
+    .contact-top-rightWrapper>span {
+        font-size: 1.89rem;
+        padding: 1rem 1rem 4rem;
+    }
+    .contact-emailWrapper {
+        display: block;
+    }
+    .contact-emailWrapper>a {
+        display: -webkit-inline-box;
+        margin-bottom: 2rem;
+    }
+    .contact-para {
+        text-align: center;
+        margin-left: 0;
+    }
+    .contact-para::before {
+        left: 0;
+        width: 60%;
+    }
+}
+@media screen and (max-width:768px) {
+    .contactsection2>.contactsection2-top {
+        display: block;
+    }
+
+    .contactsection2-top-left,
+    .contactsection2-top-right {
+        width: 100%;
+        height: auto;
+    }
+
+    .contactsection2-top-left{
+        margin-bottom: 6rem;
+    }
+
+    .contact-top-rightWrapper>span {
+        padding: 2rem 10rem 2rem 4rem;
+    }
+}
+
+@media screen and (max-width:651px) {
+    .contact-top-rightWrapper>span {
+        font-size: 1.7rem;
+        padding: 2rem  2rem 4rem;
+    }
+}
+
+@media screen and (max-width:535px) {
+    .contact-top-rightWrapper>span {
+        padding: 2rem  2rem 4rem;
+    }
+}
+
+@media screen and (max-width:382px) {
+    .contact-top-rightWrapper>span {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:382px) {
+    .contact-top-rightWrapper>span {
+        font-size: 1.2rem;
+        padding: 2rem  2rem 4rem;
+    }
+    .contact-para {
+        margin-left: 0rem; 
+    }
+    .contact-para::before {
+        left: 0rem;
+    }
+    .contact-emailWrapper {
+        display: block;
+    }
+    .contact-emailWrapper>a {
+        display: -webkit-inline-box;
+        margin-bottom: 2rem;
+    }
+    .contact-btnWrapper>.redButton {
+        padding: 0.3rem 2rem;
+    }
+    .contact-top-leftWrapper>.contact-btnWrapper {
+        gap: 1rem;
+    }
+    .contact-top-leftWrapper>h3 {
+        font-size: 2rem;
+    }
+    .contact-top-leftWrapper>h3::before {
+        left: 14px;
+        width: 59%;
+    }
+    .contact-top-leftWrapper>h3::after {
+        right: 5px;
+        width: 30%;
+    }
+    .contact-section-innerWrapper h2 {
+        width: 95%;
+        margin: 2rem auto; 
+        font-size: 3rem;
+    }
+    .contact-section-innerWrapper p {
+        width: 95%;
+        margin: 0 auto; 
+    }
+}

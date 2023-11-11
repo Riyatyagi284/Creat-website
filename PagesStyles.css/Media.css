@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 85%;
+    /* height: 10.66rem; */
+    margin: 0 auto;
+}
+
+/* Section 1 styling starts here */
+
+.media-section1-wrapper {
+    height: 45rem;
+}
+
+.media-parallax-bg {
+    background-image: url("../PagesImages/mediaImg/media-banner-bg.jpg");
+    position: relative;
+    z-index: 0;
+}
+
+.media-parallax-bg:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(58, 67, 70, 0.3);
+    z-index: 2;
+}
+
+.media-bg {
+    width: 100%;
+    height: 450px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+.mediaParallex-innerwrapper1,
+.mediaParallex-innerwrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.mediaParallex-innerwrapper1 {
+    background-image: url("../PagesImages/mediaImg/dot-grid-pattern.png");
+    background-attachment: fixed;
+    color: #fff;
+    z-index: 1;
+}
+
+.mediaParallex-innerwrapper {
+    background-color: rgba(39, 35, 51, 0.5);
+    color: #fff;
+    z-index: 3;
+}
+
+
+.mediaParallax-container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 16%;
+
+}
+
+.mediaParallax-container h2 {
+    width: 68%;
+    margin: 0 auto 2.2rem;
+    padding: 1.55rem 1rem;
+    font-size: 2.77rem;
+    font-weight: 900;
+    text-align: center;
+    background-color: rgb(231 49 35 / 75%);
+}
+
+.mediaParallax-container h2>span {
+    font-size: 4rem;
+}
+
+.media-homeline {
+    width: 2px;
+    height: 4rem;
+    background: rgba(220, 66, 54, 0.5);
+    margin: 0 auto;
+}
+
+.mediaParallax-container p {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Section2 styling part  */
+
+.media-section2Wrapper {
+    width: 100%;
+    padding: 3.6rem 0;
+    background-image: url("../PagesImages/mediaImg/medium-bg-with-pattern.jpg");
+}
+
+.media-section2 {
+    display: flex;
+}
+
+.media-section2-left {
+    width: 25%;
+    height: 100%;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.left-container>input {
+    width: 80%;
+    padding: 1rem 2.5rem;
+    margin-bottom: 2.2rem;
+    font-size: 1.4rem;
+    color: rgb(24, 23, 23);
+    border-radius: 3rem;
+    border: none;
+    border: 0.78px solid gray;
+    outline: none;
+}
+
+.left-container>input:focus {
+    box-shadow: 2px 2px 5px rgb(71, 139, 156);
+}
+
+.left-container>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    margin-left: 4rem;
+}
+
+.left-container>ul>li {
+    list-style-type: square;
+    color: #000;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.left-container>ul>li>a {
+    text-decoration: none;
+    color: red;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+
+.media-section2-right {
+    width: 75%;
+    height: 100%;
+}
+
+.mediacard-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 3rem;
+}
+
+.card {
+    width: 47%;
+    height: auto;
+    /* min-height: 450px; */
+    background: #fff;
+    border-radius: 8px;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 10px gray;
+    scale: 1.05;
+}
+
+.media-card-top {
+    width: 100%;
+    height: 45%;
+}
+
+.media-card-bottom {
+    width: 100%;
+    height: 60%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+.media-card-top>img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: none;
+    object-fit: cover;
+}
+
+.media-card-para {
+    color: #ff0000c2;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.media-card-para2 {
+    color: #837d7d;
+    font-size: 1.66rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.media-card-heading {
+    color: #545050;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+/* Media Responsive Styling */
+
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .mediaParallax-container {
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .media-section2 {
+        display: block;
+    }
+
+    .media-section2-right {
+        width: 100%;
+    }
+
+    .media-section2-left {
+        width: 100%;
+    }
+
+    .left-container {
+        margin-bottom: 4rem;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .mediaParallax-container h2 {
+        font-size: 2.2rem;
+    }
+
+    .mediaParallax-container p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mediaParallax-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .mediaParallax-container p {
+        font-size: 1.6rem;
+    }
+
+    .media-card-bottom {
+        min-height: 500px;
+    }
+
+}
+
+@media screen and (min-width:992px) and (max-width: 1100px) {
+    .card {
+        min-height: 530px;
+    }
+}

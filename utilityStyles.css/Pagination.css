@@ -1,0 +1,68 @@
+.pagination {
+    display: flex;
+    justify-content: end;
+    padding-right: 6rem;
+    gap: 0;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.pagi-btn {
+    padding: 1.5rem 1.8rem;
+    background: rgb(249 248 248);
+    color: darkgray;
+    font-size: 1.4rem;
+    border: 0.6px solid #bdbdbd;
+    cursor: pointer;
+}
+
+.pagi-btn:nth-child(1) {
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+.pagi-btn:focus {
+    background: rgb(210, 239, 247);
+    color: red;
+    font-weight: 700;
+}
+
+.pagi-btn:nth-child(6) {
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    font-size: 1.1rem;
+}
+
+/* Pagination Responsive Styling */
+
+@media screen and (max-width: 768px) {
+    .pagination {
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+    }
+    .pagi-btn:nth-child(6) {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width:388px) and (max-width:500px) {
+    .pagi-btn:nth-child(1) {
+        margin-left: 8rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pagi-btn:nth-child(1) {
+        margin-left: 10rem;
+    }
+}
+
+@media screen and (min-width:280px) and (max-width: 318px) {
+    .pagi-btn {
+        padding: 0.5rem 1.2rem;
+    }
+    .pagi-btn:nth-child(6) {
+        font-size: 1.4rem;
+    }
+}
