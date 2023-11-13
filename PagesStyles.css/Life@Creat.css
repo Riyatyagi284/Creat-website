@@ -439,3 +439,17 @@ input {
         text-align: center;
     }
 }
+
+@media screen and (max-width:368px) {
+    .creatLife-section1-innerContainer h2 {
+        padding: 0.77rem 3rem;
+        font-size: 3rem;
+    }
+
+    select, option {
+        width: 27.4rem;
+    }
+    select>option {
+        width: 27.4rem;
+    }
+}

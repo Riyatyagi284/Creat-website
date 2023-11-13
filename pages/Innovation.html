@@ -14,6 +14,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
     <title>Creat-website</title>
+
+    <style>
+        .show {
+            display: block;
+        }
+
+        .list-items {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 55rem;
+            /* height: 65rem; */
+            text-align: center;
+            padding-top: 4rem;
+        }
+
+        .commonShow {
+            display: block;
+        }
+
+        .list-items li {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -53,7 +78,7 @@
                 <div class="sidebar">
                     <img id="hamburger-menu" onClick="toggleMenu()"
                         src="https://previews.123rf.com/images/fokaspokas/fokaspokas1809/fokaspokas180900453/108562581-hamburger-menu-web-icon-black-on-white-background.jpg"
-                        onclick="" alt="hamburgur-image" />
+                       alt="hamburgur-image" />
 
                     <div class="list-items">
                         <ul class="commonShow">
@@ -157,4 +182,31 @@
 
     <div class="footer2">© Copyright 2023 UNOMINDA Inc. All rights reserved.</div>
     
+<script>
+    function toggleMenu() {
+    console.log("clicked")
+    var commonShowElements = document.querySelectorAll(".commonShow li");
+    var ListItems = document.querySelector(".list-items ");
+    var commonShowAnchor = document.querySelectorAll(".list-items li a");
+
+    commonShowElements.forEach(function (element) {
+        element.style.display = (element.style.display === 'block') ? "none" : "block"
+       
+        if (element.style.display === "none") {
+           ListItems.style.background = "none" ;
+        }else {
+            ListItems.style.background = "#dbdada";
+           commonShowAnchor.forEach(function (anchor) {
+             anchor.style.display = "block";
+             anchor.style.color = "#897f7f";
+             anchor.style.textDecoration = "none";
+             anchor.style.fontSize = "2.2rem";
+             anchor.style.marginBottom = "1.4rem";
+             anchor.style.cursor = "pointer";
+           })
+        }
+    });
+}
+</script>
+
 </body>
