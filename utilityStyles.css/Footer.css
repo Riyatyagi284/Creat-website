@@ -34,6 +34,10 @@
     text-decoration: underline;
 }
 
+.footer  a {
+    color: black;
+}
+
 .ist-col {
     margin-bottom: 2rem;
 }
