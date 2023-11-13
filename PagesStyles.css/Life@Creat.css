@@ -403,9 +403,21 @@ input {
     }
 }
 
+@media screen and (min-width: 415px) and (max-width:457px) {
+    .creatlife-section2-middle {
+        margin-bottom: 8rem;
+    }
+}
+
 @media screen and (min-width: 357px) and (max-width:457px) {
     .mid-cardRight {
         height: 415px;
+    }
+    .bottom-cardBottom>.mid-heading {
+        font-size: medium;
+    }
+    .bottom-cardBottom>.para {
+        font-size: larger;
     }
 }
 

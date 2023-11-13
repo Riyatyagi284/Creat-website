@@ -297,11 +297,11 @@ a {
         width: 95%;
         margin: 0 auto;
         height: -webkit-fill-available;
-    }
-
-    .innovation-section2-left {
+    } 
+    
+    /* .innovation-section2-left {
         margin: -6rem auto;
-    }
+    } */
 
     .inno-sec2-LeftinnerContainer {
         margin-top: 6rem;
@@ -309,7 +309,9 @@ a {
         width: 100%;
         margin-left: 0;
     }
-
+    .journey-section2-wrapper {
+        padding-bottom: 12rem;
+    }
 }
 
 @media screen and (max-width:768px) {
